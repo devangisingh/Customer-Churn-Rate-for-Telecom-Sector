@@ -57,7 +57,7 @@
    
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/110bc9e5-f344-4654-a02a-da520998e3ad)
 
-   - About 1655(842 Female + 813 Male) out of 1869 churned customers with Month-to-Month Contact considered to move out or stop using the services. 
+   - About 1655 (842 Female + 813 Male) out of 1869 churned customers with Month-to-Month Contact considered to move out or stop using the services. 
 
 7. Churn Distribution and Payment Method
 
@@ -112,4 +112,43 @@ The below snapshot is a variable importance plot from a random forest model. Thi
 Interpretation:
 
 In this plot, **TotalCharges** is the most important variable, followed by MonthlyCharges, tenure, and customerID. Variables like PhoneService, StreamingTV, and StreamingMovies have lower importance scores, indicating they are less critical for the model's predictions.
+
+## Overall Outcome - Microsoft Power BI Dashboard 
+
+Using Microsoft Power BI is used to create interactive visualizations, reports and dashboards for predictive analytics for customer churn in the telecom sector. Power BI offers a user-friendly interface, making it accessible to business users and analysts.
+
+[TelecomChurnDashboard.pdf](https://github.com/user-attachments/files/16115826/TelecomChurnDashboard.pdf)
+
+**Conclusion:**
+
+The above attached Power BI dashboard provides insights into customer churn for a telecom company. The dashboard displays various metrics and visualizations to help the company understand the factors contributing to customer churn and identify areas for improvement.
+
+**Key Metrics:**
+Total Customers: 7,043
+Male Customers: 3,555
+Female Customers: 3,488
+Customers Churned: 1,869 (26.5% of total customers)
+Total Revenue: $16.1 million
+
+**Customer Segmentation:**
+   1. **Payment Method:** The chart shows the distribution of total customers across different payment methods (electronic check, mailed check, bank transfer & credit card). Customers prefer Electronic check payment mode more than other three payment methods. 
+   2. **Contract:** The chart segments customers by contract type. Among those with contracts, 3.9k customers opted for Month-to-month contracts & have the highest churn rate (88.55%), followed by one-year contracts (8.88%) and two-year contracts (2.57%).
+   3. **Internet Service:** The chart analyzes churn rate based on whether customers have internet service and its type (DSL, Fiber Optic). Customers with no internet service have the lowest churn rate (6.05%). Fiber Optic internet service has a higher churn rate (69.40%) compared to DSL (24.56%).
+   4. **Monthly Charges:** The chart shows the relationship between monthly charges and churn where the reason for 55% of customer to churn is Monthly Charges.
+   5. **Tech Support:** The chart suggests that customers who does not have tech support churn at a higher rate(41.4%).
+   6. **Online Security:** Customers who does not use online security features seem to have a higher churn rate.
+
+Overall, Power BI dashboard helps the telecom company identify several factors potentially affecting customer churn. By analyzing these metrics, the company can develop targeted strategies to reduce churn, such as offering better deals for payments, promoting long-term contracts with attractive benefits, focusing on improving customer satisfaction and potentially considering additional online security features.
+
+## Recommendation
+
+   1. **Service Customization:** Enhanced services and customer support to the mid-age group could further add up to the core customer base, as they represent a significant portion of the clientele.
+   2. **Further Segmentation Analysis:** Segmenting the data further by gender in combination with other variables like age, service plan, and usage patterns could reveal deeper insights.
+   3. **Targeted Interventions:** Develop targeted customer retention and intervention strategies for clusters with high churn probability, especially for age groups showing the highest churn risk.
+   4. **Customer Loyalty Programs:** For clusters with a consistent churn probability, consider customer loyalty programs that increase customer stickiness and reduce the likelihood of churn.
+
+## References
+1.	https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics
+2.	Pandas Textbook
+
 
