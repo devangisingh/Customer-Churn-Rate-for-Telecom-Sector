@@ -44,5 +44,21 @@
 
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/47aa2de0-2b21-488b-8d29-d33776308b49)
 
+## Modeling Process Used
 
+- Logistic Regression Model
+Logistic Regression is a statistical method used for predicting the probability of a binary outcome. In the context of predicting customer churn in the telecom sector, the binary outcome typically represents whether a customer will churn or not. We performed univariate logistic regression, which involves examining the relationship between one predictor variable and the binary outcome variable (churn). We also tried creating a logistic model displaying summary of the model using different predictor variable and the binary outcome variable.
+
+![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/77e133c9-9584-4363-8a54-1865f26d8183)
+
+- Interpretation:
+  
+The curve indicates a positive relationship between Monthly Charges and the probability of churn. As Monthly Charges increases, the probability of churn also increases.
+At lower values of Monthly Charges, the probability of churn is lower. As the monthly charges increase, the probability of churn rises significantly.
+This suggests that customers with higher monthly charges are more likely to churn compared to customers with lower monthly charges.
+
+- Implications:
+   1. Cost Sensitivity: Customers with higher monthly charges might be more sensitive to costs and could be considering switching to cheaper alternatives.
+   2. Targeting High Spend Customers: Efforts to reduce churn may need to focus more on customers with higher monthly charges, as they are at higher risk of leaving.
+   3. Service Value: The company might need to ensure that higher monthly charges are justified by the value provided to these customers, potentially through enhanced services, benefits, or loyalty programs.
 
