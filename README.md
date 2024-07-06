@@ -119,18 +119,23 @@ Using Microsoft Power BI is used to create interactive visualizations, reports a
 
 [TelecomChurnDashboard.pdf](https://github.com/user-attachments/files/16115826/TelecomChurnDashboard.pdf)
 
-**Conclusion:**
+- **Conclusion:**
 
 The above attached Power BI dashboard provides insights into customer churn for a telecom company. The dashboard displays various metrics and visualizations to help the company understand the factors contributing to customer churn and identify areas for improvement.
 
-**Key Metrics:**
-Total Customers: 7,043
-Male Customers: 3,555
-Female Customers: 3,488
-Customers Churned: 1,869 (26.5% of total customers)
-Total Revenue: $16.1 million
+- **Key Metrics:**
+  
+i. Total Customers: 7,043
 
-**Customer Segmentation:**
+ii. Male Customers: 3,555
+
+iii. Female Customers: 3,488
+
+iv. Customers Churned: 1,869 (26.5% of total customers)
+
+v. Total Revenue: $16.1 million
+
+- **Customer Segmentation:**
    1. **Payment Method:** The chart shows the distribution of total customers across different payment methods (electronic check, mailed check, bank transfer & credit card). Customers prefer Electronic check payment mode more than other three payment methods. 
    2. **Contract:** The chart segments customers by contract type. Among those with contracts, 3.9k customers opted for Month-to-month contracts & have the highest churn rate (88.55%), followed by one-year contracts (8.88%) and two-year contracts (2.57%).
    3. **Internet Service:** The chart analyzes churn rate based on whether customers have internet service and its type (DSL, Fiber Optic). Customers with no internet service have the lowest churn rate (6.05%). Fiber Optic internet service has a higher churn rate (69.40%) compared to DSL (24.56%).
@@ -148,7 +153,7 @@ Overall, Power BI dashboard helps the telecom company identify several factors p
    4. **Customer Loyalty Programs:** For clusters with a consistent churn probability, consider customer loyalty programs that increase customer stickiness and reduce the likelihood of churn.
 
 ## References
-1.	https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics
+1.	https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 2.	Pandas Textbook
 
 
