@@ -31,6 +31,15 @@
    3. Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
    4. Demographic info about customers – gender, age range, and if they have partners and dependents
 
+## Methodlogy
+   1. **Define Objectives:** The objectives of the churn prediction model should be defined and understanding what the business hopes to achieve, such as reducing churn, identifying key factors influencing churn, and targeting specific customer segments.
+   2. **Data Collection:** Gather relevant data from various sources, including customer demographics, usage patterns, customer service interactions, and historical churn records.
+   3. **Data Preprocessing:** Cleanse the data by handling missing values, outliers, and inconsistencies.
+   4. **Exploratory Data Analysis (EDA):** Conducting exploratory data analysis to understand the characteristics of the dataset. Identify patterns, correlations, and potential variables that may influence churn.
+   5. **Tools:** Microsoft Power BI, Microsoft Excel, Google Collab
+   6. **Programming Language:** R Programming
+   7. **Libraries:** Python (Pandas, MatplotLib, Seaborn), Random Forest
+
 ## Exploratory Data Analysis
 1. Churn Distribution
 
@@ -40,48 +49,67 @@
 
 3. Churn Distribution and Gender
 
-   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/8df6ec1c-925e-4dfc-8da2-e3de4fa05e9b)
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/e31c2c69-edfa-43d2-923f-c8b62251cbe1)
 
    - Out of total 1869 customers churned, 939 are Female customers & 930 are Male customers
 
 5. Churned Customers w.r.t Gender for Contract
    
-   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/ab8fe3a6-5d37-45a6-9116-0162d7f64165)
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/110bc9e5-f344-4654-a02a-da520998e3ad)
 
-   - About 1655 out of 1869 churned customers (i.e.89% 
+   - About 1655(842 Female + 813 Male) out of 1869 churned customers with Month-to-Month Contact considered to move out or stop using the services. 
 
 7. Churn Distribution and Payment Method
 
-   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/b24a45f7-56ed-4a96-a6f0-cf4c1f8ff9ca)
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/107cff0a-d034-41d3-b12b-841252283dbe)
 
+   - Customers who have churned more likely opted for Electronic Check as the Payment Method.
 
-## Modeling Process Used
+## Modeling Process
 
-- Logistic Regression with summary of the model
+**Logistic Regression Model**:
+   
+Logistic Regression is a statistical method used for predicting the probability of a binary outcome. In the context of predicting customer churn in the telecom sector, the binary outcome typically represents whether a customer will churn or not. We performed univariate logistic regression, which involves examining the relationship between one predictor variable and the binary outcome variable (churn). We also tried creating a logistic model displaying summary of the model using different predictor variable and the binary outcome variable.
+
+i) **Logistic Regression with summary of the model**
+   
   Below is the summary of a logistic regression model (glm) that predicts customer churn based on TotalCharges and MonthlyCharges.
   
-  **glm(formula = Churn ~ TotalCharges + MonthlyCharges, family = binomial, data = tc_cleaned)**
+     glm(formula = Churn ~ TotalCharges + MonthlyCharges, family = binomial, data = tc_cleaned)
   
 Summary:
    1. Churn is the dependent variable.
    2. TotalCharges and MonthlyCharges are the independent variables.
-   3. The logistic regression model indicates that both TotalCharges and MonthlyCharges are significant predictors of customer churn. The model shows that higher TotalCharges are associated with a lower probability of churn, while higher MonthlyCharges are associated with a higher probability of churn. The significance codes indicate strong evidence against the null hypothesis (that the coefficients are zero), suggesting these predictors have a meaningful impact on the likelihood of customer churn.
+   3. The logistic regression model indicates that both TotalCharges and MonthlyCharges are significant predictors of customer churn.
+   4. The model shows that higher TotalCharges are associated with a lower probability of churn, while higher MonthlyCharges are associated with a higher probability of churn. The significance codes indicate strong evidence against the null hypothesis (that the coefficients are zero), suggesting these predictors have a meaningful impact on the likelihood of customer churn.
+      
   
-- Logistic Regression Model
-Logistic Regression is a statistical method used for predicting the probability of a binary outcome. In the context of predicting customer churn in the telecom sector, the binary outcome typically represents whether a customer will churn or not. We performed univariate logistic regression, which involves examining the relationship between one predictor variable and the binary outcome variable (churn). We also tried creating a logistic model displaying summary of the model using different predictor variable and the binary outcome variable.
+ii) **Univariate Logistic Regression**
 
 ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/d3d28eec-e505-4b4f-8961-36e805211137)
 
-- Interpretation:
+- **Interpretation:**
   
 The curve indicates a positive relationship between Monthly Charges and the probability of churn. As Monthly Charges increases, the probability of churn also increases.
 At lower values of Monthly Charges, the probability of churn is lower. As the monthly charges increase, the probability of churn rises significantly.
 This suggests that customers with higher monthly charges are more likely to churn compared to customers with lower monthly charges.
 
-- Implications:
+- **Implications:**
    1. Cost Sensitivity: Customers with higher monthly charges might be more sensitive to costs and could be considering switching to cheaper alternatives.
    2. Targeting High Spend Customers: Efforts to reduce churn may need to focus more on customers with higher monthly charges, as they are at higher risk of leaving.
    3. Service Value: The company might need to ensure that higher monthly charges are justified by the value provided to these customers, potentially through enhanced services, benefits, or loyalty programs.
  
+**Random Forest**
 
+Random Forest is a powerful machine learning algorithm that can be effectively used for predicting customer churn rate in the telecom sector. Random Forest is an ensemble method that builds multiple decision trees and combines their predictions. It is known for its robustness, ability to handle non-linearity, and resistance to overfitting.
+
+The output shows the "**Accuracy: 0.808329389493611**" which means that approximately 80.83% of the instances in validation set were predicted correctly by the random forest model. A higher accuracy generally indicates a better-performing model.
+
+The below snapshot is a variable importance plot from a random forest model. This plot shows the importance of each variable in predicting the target variable, as measured by the mean decrease in the Gini impurity.
+
+![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/da97b08f-7680-461e-bbf7-4730e737a5e9)
+
+Interpretation:
+
+In this plot, **TotalCharges** is the most important variable, followed by MonthlyCharges, tenure, and customerID. Variables like PhoneService, StreamingTV, and StreamingMovies have lower importance scores, indicating they are less critical for the model's predictions.
 
