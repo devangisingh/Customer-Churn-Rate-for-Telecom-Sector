@@ -36,20 +36,41 @@
 
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/e576317e-f4f9-4569-a0c4-1ea530c6175c)
 
-2. Churn Distribution and Gender
+   - 26.54% customers have churned to another competitors & have stopped using the subscriptions.
+
+3. Churn Distribution and Gender
 
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/8df6ec1c-925e-4dfc-8da2-e3de4fa05e9b)
 
-3. Churn Distribution for Monthly Charges and Gender
+   - Out of total 1869 customers churned, 939 are Female customers & 930 are Male customers
 
-   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/47aa2de0-2b21-488b-8d29-d33776308b49)
+5. Churned Customers w.r.t Gender for Contract
+   
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/ab8fe3a6-5d37-45a6-9116-0162d7f64165)
+
+   - About 1655 out of 1869 churned customers (i.e.89% 
+
+7. Churn Distribution and Payment Method
+
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/b24a45f7-56ed-4a96-a6f0-cf4c1f8ff9ca)
+
 
 ## Modeling Process Used
 
+- Logistic Regression with summary of the model
+  Below is the summary of a logistic regression model (glm) that predicts customer churn based on TotalCharges and MonthlyCharges.
+  
+  **glm(formula = Churn ~ TotalCharges + MonthlyCharges, family = binomial, data = tc_cleaned)**
+  
+Summary:
+   1. Churn is the dependent variable.
+   2. TotalCharges and MonthlyCharges are the independent variables.
+   3. The logistic regression model indicates that both TotalCharges and MonthlyCharges are significant predictors of customer churn. The model shows that higher TotalCharges are associated with a lower probability of churn, while higher MonthlyCharges are associated with a higher probability of churn. The significance codes indicate strong evidence against the null hypothesis (that the coefficients are zero), suggesting these predictors have a meaningful impact on the likelihood of customer churn.
+  
 - Logistic Regression Model
 Logistic Regression is a statistical method used for predicting the probability of a binary outcome. In the context of predicting customer churn in the telecom sector, the binary outcome typically represents whether a customer will churn or not. We performed univariate logistic regression, which involves examining the relationship between one predictor variable and the binary outcome variable (churn). We also tried creating a logistic model displaying summary of the model using different predictor variable and the binary outcome variable.
 
-![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/77e133c9-9584-4363-8a54-1865f26d8183)
+![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/d3d28eec-e505-4b4f-8961-36e805211137)
 
 - Interpretation:
   
@@ -61,4 +82,6 @@ This suggests that customers with higher monthly charges are more likely to chur
    1. Cost Sensitivity: Customers with higher monthly charges might be more sensitive to costs and could be considering switching to cheaper alternatives.
    2. Targeting High Spend Customers: Efforts to reduce churn may need to focus more on customers with higher monthly charges, as they are at higher risk of leaving.
    3. Service Value: The company might need to ensure that higher monthly charges are justified by the value provided to these customers, potentially through enhanced services, benefits, or loyalty programs.
+ 
+
 
