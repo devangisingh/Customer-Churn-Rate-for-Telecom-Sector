@@ -109,7 +109,7 @@ The below snapshot is a variable importance plot from a random forest model. Thi
 
 ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/da97b08f-7680-461e-bbf7-4730e737a5e9)
 
-Interpretation:
+- **Interpretation:**
 
 In this plot, **TotalCharges** is the most important variable, followed by MonthlyCharges, tenure, and customerID. Variables like PhoneService, StreamingTV, and StreamingMovies have lower importance scores, indicating they are less critical for the model's predictions.
 
@@ -154,6 +154,5 @@ Overall, Power BI dashboard helps the telecom company identify several factors p
 
 ## References
 1.	https://www.kaggle.com/datasets/blastchar/telco-customer-churn
-2.	Pandas Textbook
 
 
