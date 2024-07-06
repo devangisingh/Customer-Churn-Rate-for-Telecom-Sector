@@ -36,7 +36,7 @@
    2. **Data Collection:** Gather relevant data from various sources, including customer demographics, usage patterns, customer service interactions, and historical churn records.
    3. **Data Preprocessing:** Cleanse the data by handling missing values, outliers, and inconsistencies.
    4. **Exploratory Data Analysis (EDA):** Conducting exploratory data analysis to understand the characteristics of the dataset. Identify patterns, correlations, and potential variables that may influence churn.
-   5. **Tools:** Microsoft Power BI, Microsoft Excel, Google Collab
+   5. **Tools:** Microsoft Power BI, Microsoft Excel, Google Collab, Jupyter Notebook
    6. **Programming Language:** R Programming
    7. **Libraries:** Python (Pandas, MatplotLib, Seaborn), Random Forest
 
@@ -47,23 +47,35 @@
 
    - 26.54% customers have churned to another competitors & have stopped using the subscriptions.
 
-3. Churn Distribution and Gender
+2. Churn Distribution and Gender
 
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/e31c2c69-edfa-43d2-923f-c8b62251cbe1)
 
    - Out of total 1869 customers churned, 939 are Female customers & 930 are Male customers
 
-5. Churned Customers w.r.t Gender for Contract
+3. Churned Customers w.r.t Gender for Contract
    
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/110bc9e5-f344-4654-a02a-da520998e3ad)
 
    - About 1655 (842 Female + 813 Male) out of 1869 churned customers with Month-to-Month Contact considered to move out or stop using the services. 
 
-7. Churn Distribution and Payment Method
+4. Churn Distribution and Payment Method
 
    ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/107cff0a-d034-41d3-b12b-841252283dbe)
 
    - Customers who have churned more likely opted for Electronic Check as the Payment Method.
+  
+5. Distribution of Monthly Charges
+
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/0b7f5b2c-1aa6-4885-81cc-1c36d50bec95)
+
+6. Monthly Charges Vs Churn
+
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/105645d9-efd7-4910-8079-e7757b599bfd)
+
+7. Correlation Heatmap
+
+   ![image](https://github.com/devangisingh/Customer-Churn-Rate-for-Telecom-Sector/assets/80507579/4d131750-4bdc-40c0-b347-bb38101164dc)
 
 ## Modeling Process
 
